@@ -1,0 +1,77 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page atmosphere */
+body {
+  background-color: #f1efe9;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.015),
+      rgba(0, 0, 0, 0.015)
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.02),
+      rgba(0, 0, 0, 0.02) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  color: #111;
+  font-family: monospace;
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+/* Subtle text blur for unease */
+body {
+  text-shadow: 0 0 0.4px rgba(0, 0, 0, 0.3);
+}
+
+/* Centered archive page */
+.center {
+  text-align: center;
+  margin-top: 22vh;
+}
+
+/* Diary text */
+pre {
+  max-width: 640px;
+  margin: 15vh auto 4vh auto;
+  padding: 0 1rem;
+  white-space: pre-wrap;
+  font-size: 14px;
+}
+
+/* Links */
+a {
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+}
+
+a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+}
+
+/* Footer / navigation */
+p {
+  text-align: center;
+  margin-bottom: 4vh;
+}
+
+/* Quiet decay */
+small {
+  opacity: 0.55;
+}
+
+/* Mobile safety */
+@media (max-width: 600px) {
+  pre {
+    margin-top: 10vh;
+    font-size: 13px;
+  }
+}
